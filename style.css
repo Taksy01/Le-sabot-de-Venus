@@ -1,0 +1,1672 @@
+body {
+    margin: 0;
+    font-family: "Roboto";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 140px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ligne-style {
+    height: 2px;
+    background-color: #352c021e;
+    border: none;
+    width: 90%;
+    margin: 70px auto;
+}
+
+/* -------------------------------- HEADER -------------------------------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d5a23a;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 7px 30px rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 30px;
+    font-family: "Lobster";
+    color: #000;
+}
+
+@media (max-width: 700px) {
+    .header {
+        font-size: 10px;
+    }
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.nav-menu a:hover {
+    color: rgb(160, 118, 2);
+}
+
+.langue .flag-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* -------------------------------- ACCUEIL -------------------------------- */
+.accueil-banniere {
+    margin-top: 0px;
+    position: relative;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.accueil-banniere-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.accueil-banniere-text {
+    color: #333333;
+    text-align: left;
+    position: relative;
+    margin-top: 100px;
+    margin-right: 100px;
+    max-width: 30%;
+    background-color: white;
+    padding: 0 30px 50px;
+    padding-bottom: 70px;
+    border-radius: 8px;
+    box-shadow: 0 7px 30px rgba(0, 0, 0, 0.7);
+}
+
+.accueil-banniere h1 {
+    position: absolute;
+    top: -280px;
+    left: 20px;
+    font-size: 120px;
+    font-family: "Lobster";
+    font-weight: initial;
+    text-shadow: 3px 8px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 247, 225);
+}
+
+.accueil-subtitle h2 {
+    font-size: 50px;
+    color: #af6b11;
+    font-weight: initial;
+    font-family: "Lobster";
+}
+
+.accueil-subtitle p {
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+
+.accueil-banniere-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 800;
+    padding: 25px 40px;
+    margin: 10px;
+    bottom: 20px;
+    background-color: #B88E2F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.accueil-banniere-button:hover {
+    background-color: #b0812c;
+}
+
+#accueil-camping {
+
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.accueil-camping-image img {
+    border-radius: 20px;
+    max-width: 700px;
+    height: fit-content;
+}
+
+.accueil-camping-text {
+    text-align: center;
+}
+
+#accueil-camping h1 {
+    font-size: 50px;
+    color: #333333;
+    font-family: "Lobster";
+    padding-top: 50px;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+#accueil-camping p {
+    font-family: "Roboto";
+    color: #666666;
+    font-size: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 100px;
+
+}
+
+.accueil-camping-button {
+    background-color: #d5a23a;
+    color: #fff;
+    padding: 30px;
+    font-family: "Roboto";
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.accueil-camping-button:hover {
+    background-color: #b0812c;
+}
+
+#accueil-carte {
+    display: flex;
+    align-items: center;
+    margin: 100px;
+    justify-self: center;
+}
+
+.accueil-carte-text {
+    margin-right: 100px;
+    max-width: 500px;
+}
+
+.accueil-carte-text h1 {
+    text-align: center;
+    color: #333333;
+    font-size: 50px;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    font-family: 'Lobster';
+}
+
+.accueil-carte-text h2 {
+    color: #333333;
+    font-weight: 400;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto';
+}
+
+.accueil-carte-text p {
+    color: #666666;
+    font-weight: 400;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    ;
+    font-family: 'Roboto';
+}
+
+.accueil-carte-image img {
+    width: 700px;
+}
+
+#accueil-locations {
+    background-color: #FCF8F3;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+
+}
+
+.accueil-location-text h1 {
+    font-family: "Lobster";
+    color: #333333;
+    font-size: 50px;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    ;
+}
+
+.accueil-location-text p {
+    font-family: "Roboto";
+    font-size: 20px;
+    color: #666666;
+}
+
+.accueil-location-text {
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.accueil-location-image {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+
+}
+
+.accueil-location-image img {
+    width: 350px;
+    height: fit-content;
+}
+
+.accueil-location-image h2 {
+    color: #333333;
+    font-family: "Roboto";
+}
+
+.accueil-location-button-box {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.accueil-location-button {
+    background-color: #d5a23a;
+    color: #fff;
+    padding: 30px;
+    font-family: "Roboto";
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.accueil-location-button:hover {
+    background-color: #b0812c;
+}
+
+#accueil-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+
+.accueil-services-desc {
+    margin-bottom: 300px;
+}
+
+.accueil-services-desc h1 {
+    text-align: center;
+}
+
+.accueil-services-picto img {
+    position: absolute;
+    width: 500px;
+    left: -100px;
+
+}
+
+.accueil-services-picto {
+    position: relative;
+    padding-top: 100px;
+}
+
+.accueil-services-text {
+    width: 350px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+
+.accueil-services-text h1 {
+    font-size: 50px;
+    color: #333333;
+    font-family: "Lobster";
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    ;
+}
+
+.accueil-services-text p {
+    color: #666666;
+    font-family: "Roboto";
+    line-height: 25px;
+}
+
+.accueil-services-picto {
+    width: 200px;
+}
+
+.accueil-services-button {
+    margin-top: 100px;
+    background-color: #d5a23a;
+    color: #fff;
+    padding: 30px;
+    font-family: "Roboto";
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.accueil-services-button:hover {
+    background-color: #b0812c;
+}
+
+.accueil-services-images {
+    position: relative;
+    flex: 1;
+    max-width: 700px;
+    height: 700px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+.accueil-services-images img {
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.accueil-services-img-1 {
+    bottom: 15%;
+    left: 0;
+    width: 50%;
+    z-index: 1;
+}
+
+.accueil-services-img-2 {
+    bottom: 25%;
+    right: 10%;
+    width: 50%;
+    z-index: 2;
+}
+
+.accueil-services-img-3 {
+    bottom: 0;
+    left: 20%;
+    width: 55%;
+    z-index: 3;
+}
+
+#accueil-partenaires {
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+.accueil-partenaires-texte h1 {
+    font-family: 'lobster';
+    text-align: center;
+    color: #333333;
+    font-size: 50px;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.accueil-partenaires-texte p {
+    font-family: 'roboto';
+    text-align: center;
+    color: #666666;
+    font-size: 20px;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.accueil-partenaires-texte {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    color: #333333;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
+    margin-bottom: 40px;
+}
+
+.accueil-partenaires-images img {
+    margin: 10px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+.accueil-partenaires-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accueil-partenaires-image2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.accueil-partenaires-image1 {
+    position: relative;
+}
+
+.coin-image1 {
+    top: -15px;
+    left: -15px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #365140;
+    z-index: -1;
+    width: 80%;
+    height: 90%;
+}
+
+.accueil-partenaires-image4 {
+    position: relative;
+}
+
+.coin-image4 {
+    top: -10px;
+    right: 60px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #365140;
+    z-index: -1;
+    width: 70%;
+    height: 60%;
+}
+
+.accueil-partenaires-image5 {
+    position: relative;
+}
+
+.coin-image5 {
+    bottom: -15px;
+    right: -15px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #365140;
+    z-index: -1;
+    width: 80%;
+    height: 60%;
+}
+
+.accueil-partenaires-button-box {
+    justify-content: center;
+    text-align: center;
+
+}
+
+.accueil-partenaires-button {
+    background-color: #d5a23a;
+    color: #fff;
+    padding: 30px;
+    font-family: "Roboto";
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.accueil-partenaires-button:hover {
+    background-color: #b0812c;
+}
+
+#accueil-tourisme img {
+    width: 100%;
+    height: fit-content;
+}
+
+#accueil-tourisme {
+    margin-top: 50px;
+}
+
+.accueil-tourisme-background {
+    position: relative;
+}
+
+.accueil-tourisme-blur-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 550px;
+    height: 99.3%;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(7px);
+}
+
+.accueil-tourisme-text {
+    position: absolute;
+    width: 80%;
+    height: 500px;
+    top: 30px;
+    right: 70px;
+}
+
+.accueil-tourisme-text h1 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 40px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    font-family: 'Lobster';
+}
+
+.accueil-tourisme-text p {
+    color: #ffffff;
+    font-family: 'roboto';
+    padding-left: 30px;
+    font-weight: 300;
+}
+
+.accueil-tourisme-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 800;
+    padding: 25px 50px;
+    margin:20%;
+    bottom: 20px;
+    background-color: #B88E2F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.slogan {
+    text-align: center;
+    font-family: 'lobster';
+    font-size: 45px;
+    color: #7D7C7A;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    transition: color 0.3s;
+    text-decoration: none;
+    cursor: default;
+}
+
+.slogan:hover {
+    color: #50851B;
+}
+
+
+/* -------------------------------- FOOTER -------------------------------- */
+footer {
+    background-color: #365140;
+    padding: 20px;
+    font-family: "Roboto";
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .logos {
+    display: flex;
+    margin-left: 5%;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+footer .logos img {
+    width: 150px;
+    height: fit-content;
+}
+
+footer .contact-info {
+    margin-top: 20px;
+    margin-left: 70px;
+    text-align: left;
+}
+
+footer .contact-info p {
+    margin: 5px 0;
+
+}
+
+footer .via-natura {
+    margin-top: 20px;
+    margin-left: 70px;
+    text-align: left;
+}
+
+footer .via-natura a {
+    color: rgb(245, 214, 129);
+    text-decoration: none;
+}
+
+.retour {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    font-family: 'Roboto';
+    font-size: 1.2em;
+    color: white;
+    margin-top: 40px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+/* -------------------------------- NOTRE CAMPING -------------------------------- */
+
+.camping-banniere {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    background: url('Images/Camping/BannerCamping.png') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: far-right;
+    align-items: flex-start;
+}
+
+.camping-banniere h1 {
+    font-family: 'Lobster';
+    font-size: 5em;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-left: 50px;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+.camping-overlay {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+}
+
+.camping-overlay p {
+    font-family: "Roboto";
+    margin: 10px;
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 110px;
+}
+
+.camping-banniere-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 800;
+    padding: 25px 40px;
+    margin: 10px;
+    bottom: 20px;
+    background-color: #B88E2F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.camping-banniere-button:hover {
+    background-color: #a57d34;
+}
+
+
+.camping-box {
+    padding: 100px;
+    background-color: #FFF6E1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.camping-box-texte {
+    width: 300px;
+}
+
+.camping-box-texte p {
+    font-family: 'roboto';
+    line-height: 22px;
+    color: #666666;
+}
+
+.camping-box-titre h2 {
+    text-align: center;
+    color: #333333;
+    font-size: 50px;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    font-family: 'Lobster';
+}
+
+.camping-box-titre {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: #333333;
+    font-family: "Lobster";
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.camping-box-titre img {
+    width: 120px;
+    height: fit-content;
+}
+
+.camping-box-image img {
+    width: 600px;
+    height: fit-content;
+    position: relative;
+    z-index: 2;
+}
+
+.camping-box-image {
+    position: relative;
+}
+
+.camping-box-verte1 {
+    position: absolute;
+    background-color: #365140;
+    border-radius: 10px;
+    z-index: 1;
+    top: 60px;
+    left: 140px;
+    width: 80%;
+    height: 90%;
+}
+
+.camping-box-verte2 {
+    position: absolute;
+    background-color: #365140;
+    border-radius: 10px;
+    z-index: 1;
+    bottom: 60px;
+    right: 140px;
+    width: 80%;
+    height: 90%;
+}
+
+.camping-box-verte3 {
+    position: absolute;
+    background-color: #365140;
+    border-radius: 10px;
+    z-index: 1;
+    top: 60px;
+    left: 140px;
+    width: 80%;
+    height: 90%;
+}
+
+.camping-engagement {
+    position: relative;
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 250px;
+
+}
+
+.camping-engagement h2 {
+    text-align: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 40px;
+    color: #DBB256;
+    font-family: "Lobster";
+    text-shadow: 0 0 10px rgba(255, 209, 110, 0.932);
+}
+
+.camping-engagement .camping-engagement-img-1 {
+    position: absolute;
+    left: 0;
+    max-width: 50%;
+    height:fit-content;
+}
+
+.camping-engagement .camping-engagement-img-2 {
+    position: absolute;
+    left: 50%;
+    margin-top:200px;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: auto;
+    z-index: 2;
+}
+
+.camping-engagement .camping-engagement-img-3 {
+    position: absolute;
+    right: 0;
+    max-width: 50%;
+    height:fit-content;
+}
+
+/* -------------------------------- NOS LOCATIONS -------------------------------- */
+
+.locations-banniere {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    background: url('Images/Locations/BannerLocations.png') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: far-right;
+    align-items: flex-start;
+}
+
+.locations-banniere h1 {
+    font-family: 'Lobster';
+    font-size: 5em;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-left: 50px;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+
+.locations-overlay {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+}
+
+.locations-overlay p {
+    font-family: "Roboto";
+    margin: 10px;
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 110px;
+}
+
+.locations-banniere-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 800;
+    padding: 25px 40px;
+    margin: 10px;
+    bottom: 20px;
+    background-color: #B88E2F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.locations-banniere-button:hover {
+    background-color: #a57d34;
+}
+
+.locations-emplacements {
+    padding: 40px 20px;
+}
+
+.locations-emplacements-texte {
+    text-align: center;
+    padding-left: 350px;
+    padding-right: 350px;
+
+}
+
+#locations-emplacements h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #333333;
+    text-align: center;
+    font-family: "Lobster";
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#locations-emplacements p {
+    font-size: 20px;
+    color: #666666;
+}
+
+.locations-grid {
+    margin: 0 auto;
+    display: grid;
+    background: url('Images/Locations/BannerGridLocations.png') no-repeat center center/cover;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.locations-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.locations-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.locations-card h3 {
+    font-family: "roboto";
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 1.4em;
+    color: #333333
+}
+
+.locations-card p {
+    margin: 10px;
+}
+
+.locations-prix-card {
+    justify-content: center;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #846215;
+}
+
+.locations-emplacements2-chalets {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    gap: 30px;
+}
+
+.locations-emplacements2-chalets .locations-emplacements2-text {
+    max-width: 400px;
+}
+
+.locations-emplacements2-chalets h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: "Lobster";
+    color: #333;
+}
+
+.locations-emplacements2-chalets p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.locations-emplacements2-chalets .locations-emplacements2-price {
+    font-size: 25px;
+    color: #846215;
+    margin-top: 10px;
+}
+
+.locations-emplacements2-chalets img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.locations-emplacements2-mobil-homes {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    background-color: #FFF6E1;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.locations-emplacements2-mobil-homes .locations-emplacements2-text {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.locations-emplacements2-mobil-homes h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Lobster';
+    color: #333;
+}
+
+.locations-emplacements2-mobil-homes p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.locations-emplacements2-mobil-homes .locations-emplacements2-price {
+    font-size: 25px;
+    color: #846215;
+    margin-top: 10px;
+}
+
+.locations-emplacements2-mobil-homes .locations-emplacements2-images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.locations-emplacements2-mobil-homes img {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* -------------------------------- NOS PARTENAIRES -------------------------------- */
+
+
+.partenaires-banniere {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    background: url('Images/Partenaires/BannerPartenaires.png') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: far-right;
+    align-items: flex-start;
+}
+
+.partenaires-banniere h1 {
+    font-family: 'Lobster';
+    font-size: 5em;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-left: 50px;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+
+.partenaires-overlay {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+}
+
+.partenaires-overlay p {
+    font-family: "Roboto";
+    margin: 10px;
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 110px;
+}
+
+.partenaires-banniere-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 800;
+    padding: 25px 40px;
+    margin: 10px;
+    bottom: 20px;
+    background-color: #B88E2F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.partenaires-banniere-button img {
+    width: 20px;
+    height: auto;
+}
+
+.partenaires-banniere-button:hover {
+    background-color: #a57d34;
+}
+
+.partenaires-grid-container {
+    margin: 200px 80px 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 100px;
+    row-gap: 200px;
+    padding: 20px;
+}
+
+.partenaires-grid-item {
+    position: relative;
+    height: 340px;
+    background-color: #DBB256;
+    border-radius: 10px;
+    padding: 30px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s;
+}
+
+.partenaires-grid-item:hover {
+    transform: scale(1.05);
+}
+
+.partenaires-grid-item img:not(a img) {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: fit-content;
+    height: 170px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.4));
+}
+
+.partenaires-grid-item p {
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 18px;
+    color: #333333;
+}
+
+.parternaires-grid-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px 25px;
+    gap: 20px;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    font-family: 'roboto';
+    background-color: #365140;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.parternaires-grid-button:hover {
+    background-color: #3c694c;
+}
+
+
+/* -------------------------------- NOS SERVICES -------------------------------- */
+.services-banniere {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    background: url('Images/Services/BannerServices.png') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: far-right;
+    align-items: flex-start;
+}
+
+.services-banniere h1 {
+    font-family: 'Lobster';
+    font-size: 5em;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-left: 50px;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+.services-overlay {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+}
+
+.services-overlay p {
+    font-family: "Roboto";
+    margin: 10px;
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 110px;
+}
+
+.services-banniere-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 800;
+    padding: 25px 40px;
+    margin: 10px;
+    bottom: 20px;
+    background-color: #B88E2F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.services-banniere-button:hover {
+    background-color: #a57d34;
+}
+#services-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.carousel-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+
+#services-carousel h2 {
+    text-align: center;
+    color: #333333;
+    font-size: 50px;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    font-family: 'Lobster';
+}
+#services-carousel p {
+    text-align: center;
+    color: #666666;
+    font-family: 'Roboto';
+    margin-bottom: 50px;
+}
+
+
+
+.carousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+    opacity: 1;
+    filter: none;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.carousel-controls button {
+    pointer-events: all;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.carousel-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* -------------------------------- TOURISME -------------------------------- */
+
+.tourisme-banniere {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    background: url('Images/Tourisme/BannerTourisme.png') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: far-right;
+    align-items: flex-start;
+}
+
+.tourisme-banniere h1 {
+    font-family: 'Lobster';
+    font-size: 5em;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-left: 50px;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+
+.tourisme-overlay {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+}
+
+.tourisme-overlay p {
+    font-family: "Roboto";
+    margin: 10px;
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 110px;
+}
+
+.tourisme-banniere-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 800;
+    padding: 25px 40px;
+    margin: 10px;
+    bottom: 20px;
+    background-color: #B88E2F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tourisme-banniere-button:hover {
+    background-color: #a57d34;
+}
+
+.tourisme-titre {
+    text-align: center;
+    font-size: 30px;
+    color: #333333;
+    font-family: "Lobster";
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+#tourisme-villages {
+    display: flex;
+    margin: 100px;
+    justify-content: center;
+    gap: 100px;
+}
+
+.tourisme-villages-texte {
+    width: 400px;
+    margin-right: 10px;
+}
+
+.tourisme-villages-texte h1 {
+    color: #333333;
+    font-size: 40px;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    font-family: 'Lobster';
+}
+
+.tourisme-villages-texte p {
+    color: #666666;
+    font-weight: 400;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto';
+    margin-bottom: 100px;
+
+}
+
+.tourisme-villages-image {
+    width: 400px;
+    height: 500px;
+    position: relative;
+}
+
+.tourisme-villages-image-top {
+    position: absolute;
+    z-index: 2;
+
+    width: 400px;
+}
+
+.tourisme-villages-image-blur {
+    position: absolute;
+    width: 400px;
+    z-index: 1;
+    top: 30px;
+    left: 30px;
+    filter: blur(20px);
+}
+
+.tourisme-villages-button {
+    background-color: #d5a23a;
+    color: #fff;
+    padding: 30px;
+    font-family: "Roboto";
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.tourisme-villages-button:hover {
+    background-color: #a57d34;
+}
+
+
+.tourisme-rando1 {
+    justify-content: center;
+    gap: 100px;
+    display: flex;
+    padding: 30px;
+}
+
+.tourisme-rando1 .tourisme-img-rando {
+    width: 500px;
+    height: fit-content;
+}
+
+.tourisme-texte {
+    display: flex;
+    width: 400px;
+}
+
+.tourisme-texte img {
+    width: 45px;
+    margin-right: 10px;
+    height: fit-content;
+}
+
+.tourisme-texte p {
+    font-family: 'roboto';
+    font-size: 20px;
+    color: #666666;
+}
+
+.tourisme-stat {
+    font-family: 'roboto';
+    color: #333333;
+    display: flex;
+    width: 48%;
+    gap: 30px;
+    margin-top: 90px;
+    ;
+}
+
+.tourisme-stat img {
+    width: 45px;
+    height: fit-content;
+}
+
+.tourisme-rando2 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 30px;
+}
+
+.tourisme-rando2 .tourisme-img-rando {
+    width: 500px;
+    height: fit-content;
+}
+
+.tourisme-rando2 .tourisme-texte img {
+    width: 40px;
+    height: fit-content;
+}
+
+.tourisme-en-savoir-plus2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tourisme-rando-button {
+    background-color: #d5a23a;
+    color: #fff;
+    margin-top: 80px;
+    padding: 30px 40px;
+    font-family: "Roboto";
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.2s ease;
+    margin-bottom: 70px;
+
+}
+
+.tourisme-rando-button:hover {
+    background-color: #a57d34;
+}
+
+.tourisme-produits {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+
+.tourisme-produits div {
+    background-color: #365140;
+    width: 80%;
+    height: 170px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.tourisme-produits div img {
+    position: absolute;
+    width: 250px;
+    align-self: center;
+    transition: transform .2s;
+}
+
+
+.tourisme-produits div img:hover {
+    transform: scale(1.2)
+}
+
+
+.tourisme-produits .tourisme-fromage img {
+    width: 300px;
+    margin-left: -20px;
+}
+
+.tourisme-produits .tourisme-fromage img:hover {
+    transform: scale(1.1)
+}
+
+.tourisme-produits div p {
+    color: white;
+    margin-left: 300px;
+    margin-right: 10px;
+    width: 80%;
+    font-size: 18px;
+    padding: 0 70px;
+}
+
+.tourisme-acceder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tourisme-acceder p {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    font-family: 'roboto';
+    color: #666666;
+}
+
+.tourisme-destinationChartreuse {
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
